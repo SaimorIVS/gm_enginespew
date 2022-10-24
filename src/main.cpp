@@ -8,11 +8,7 @@
 #include <cstdio>
 #include <GarrysMod/Lua/Interface.h>
 #include <Platform.hpp>
-#if ARCHITECTURE_IS_X86
-#include <Color.h>
-#elif ARCHITECTURE_IS_X86_64
 #include <color.h>
-#endif
 
 lua_State* luaState = NULL;
 volatile bool inspew = false; // volatile not needed but itll remind me
