@@ -30,12 +30,7 @@ jobs:
     - name: Make
       run: |
         cd projects/linux/gmake
-        make
         make config=releasewithsymbols_x86_64
-    - uses: actions/upload-artifact@v2
-      with:
-        name: gmsv_enginespew_linux.dll
-        path: projects/linux/gmake/x86/ReleaseWithSymbols/gmsv_enginespew_linux.dll
     - uses: actions/upload-artifact@v2
       with:
         name: gmsv_enginespew_linux64.dll
