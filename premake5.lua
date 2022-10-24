@@ -13,7 +13,3 @@ CreateWorkspace({name = "enginespew"})
 	CreateProject({serverside = true, source_path = "src"})
 		IncludeSDKCommon()
 		IncludeSDKTier0()
-
-	CreateProject({serverside = false, source_path = "src"})
-		IncludeSDKCommon()
-		IncludeSDKTier0()
